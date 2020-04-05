@@ -71,7 +71,7 @@ struct node* Insertion_Sort(struct node *r){
             flag=false;
         }
         	if (sorted!=NULL){ // if sonucuna gore listenin basına veya sonuna ekleme yapıyoruz
-        	(flag) ? (r=ins_ptr) : (prev->next=ins_ptr); // Burda flag true ise while dongusune hic girilmemistir ve liste bos oldugundan ins_ptr deki degerimizi asıl listeye atarız
+        	(flag) ? (r=ins_ptr) : (prev->next=ins_ptr); // Burda flag true ise while dongusune hic girilmemistir r yi kaydırmamız gerekir
 			ins_ptr->next = sorted; // degil ise listenin basına degerimizi atıyoruz
         	}
         	else{ 
